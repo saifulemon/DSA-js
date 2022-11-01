@@ -30,4 +30,46 @@ function max5Log (n) {
         console.log(i);
     }
 }
-max5Log(3);  // big-o(1)
+max5Log(3);  // big-o(1) 
+
+
+
+// space complexity in same function
+function sum (arr) {
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i];
+    }
+    return total;
+}
+console.log(sum([5, 15, 3, 7])); 
+
+
+// try to different
+function double (arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(arr[i] * 2);
+    }
+    return newArr;
+}
+console.log(double([5, 15, 3, 7]));  
+
+
+
+// find a unique name
+function uniqueName (arr) {
+    let unique = [];
+    for (let i = 0; i < arr.length; i++) {
+        let ele = arr[i];
+        if (!unique.includes(ele)) {
+            unique.push(ele);
+        }
+    }
+    return unique;
+}
+// time complexity == n2;
+// space complexity == n;
+
+let nameArr = ['saifulemon', 'abu Hasnat', 'noman', 'saifulemon', 'abuHasnat', 'mehedi'];
+console.log(uniqueName(nameArr));
