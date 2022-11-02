@@ -72,4 +72,28 @@ function uniqueName (arr) {
 // space complexity == n;
 
 let nameArr = ['saifulemon', 'abu Hasnat', 'noman', 'saifulemon', 'abuHasnat', 'mehedi'];
-console.log(uniqueName(nameArr));
+console.log(uniqueName(nameArr)); 
+
+
+
+// log n in javascript
+function logarithms (n) {
+    while (n > 1) {
+        console.log(n);
+        n /= 2;
+    }
+    console.log('done');
+}    
+logarithms(10);
+
+
+// another log n 
+function anotherLogn (n) {
+    if (n <= 1) {
+        console.log('done');
+        return
+    }
+    console.log(n);
+    anotherLogn(n/2);
+}
+anotherLogn(8); 
