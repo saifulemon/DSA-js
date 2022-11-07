@@ -97,3 +97,27 @@ function anotherLogn (n) {
     anotherLogn(n/2);
 }
 anotherLogn(8); 
+
+
+// object in Big-O
+const myObj = {
+    name: 'Saiful Islam',
+    roll: '4804079',
+    dep: 'DTNT',
+    sem: '6th'
+}
+console.log(Object.keys(myObj));
+
+
+// Array in Big-O
+const myArr = ['saiful', 'abuHasnat', 'mahir', 'niloy'];
+//                0           1          2         3
+/* 
+---------Big-O of array ------------
+1. Insertion = depends < shift & unshift = Big-O (n)  
+   Insertion = depends < push & pop = Big-O (1) 
+
+2. Removal = depends 
+3. Searching = Big-O (n)
+4. Access = Big-O (1)
+*/
